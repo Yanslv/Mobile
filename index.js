@@ -10,6 +10,7 @@ import { Provider } from "react-redux";
 import 'react-native-gesture-handler';
 
 
+
 const Main = () => (
   <Provider store={store}>
     <App />

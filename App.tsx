@@ -19,10 +19,14 @@ import Home from "./src/pages/Home/Home";
 import Predios from "./src/pages/Predios/Predios";
 import { BlurView } from "@react-native-community/blur";
 import { Button, View } from "react-native";
+import { createUser } from "./src/auth/Authentication";
+
 
 const Stack = createNativeStackNavigator();
 const Drawer = createDrawerNavigator();
 const Bottom = createBottomTabNavigator();
+
+const user = await createUser('example@example.com', 'examplepassword');
 
 const StackNavigator = () => {
   return (
